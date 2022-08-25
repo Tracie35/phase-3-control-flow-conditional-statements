@@ -1,6 +1,8 @@
 def admin_login(username, password)
-  
-  if (username == "admin" || username == "ADMIN") && password == "12345"
+  # your code here
+  if username == "admin" && password == "12345"
+    "Access granted"
+  elsif username == "ADMIN" && password == "12345"
     "Access granted"
   else
     "Access denied"
@@ -8,10 +10,10 @@ def admin_login(username, password)
 end
 
 def hows_the_weather(temperature)
- 
+  # your code here
   if temperature < 40
     "It's brisk out there!"
-  elsif temperature >= 40 and temperature <= 65
+  elsif temperature >= 40 && temperature <= 65
     "It's a little chilly out there!"
   elsif temperature > 85
     "It's too dang hot out there!"
@@ -21,8 +23,8 @@ def hows_the_weather(temperature)
 end
 
 def fizzbuzz(num)
-
-  if (num % 3 == 0) && (num % 5 == 0)
+  # your code here
+  if num % 3 == 0 && num % 5 ==0
     "FizzBuzz"
   elsif num % 3 == 0
     "Fizz"
@@ -34,12 +36,18 @@ def fizzbuzz(num)
 end
 
 def calculator(operation, num1, num2)
-
+  # your code here
+  
   case operation
-  when "+" then num1 + num2
-  when "-" then num1 - num2
-  when "*" then num1 * num2
-  when "/" then num1 / num2
-  else print "Invalid operation!"
+  when "+"
+    num1 + num2
+  when "-" 
+    num1 - num2
+  when "*"
+    num1 * num2
+  when "/" 
+    num1 / num2
+  else 
+    puts "Invalid operation!"
   end
 end
